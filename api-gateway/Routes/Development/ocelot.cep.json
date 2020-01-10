@@ -1,0 +1,20 @@
+﻿{
+  "ReRoutes": [
+    {
+      "UpstreamPathTemplate": "/v1/cep/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/v1/cep/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api.postmon.com.br",
+          "Port": 443
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "AzureAD",
+        "AllowedScopes": []
+      }
+    }
+  ]
+}
